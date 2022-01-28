@@ -22,7 +22,7 @@ const InputTodo = () => {
     return (
         <Fragment>
             <h1 className="text-center mt-5">Todo List</h1>
-            <form className="d-flex mt-5" onSubmit={onSubmitForm}>
+            <form className="d-flex mt-5" onSubmit={e=> onSubmitForm(e)}>
                 <input type="text" className="form-control" value={description} onChange={e => {
                     setDescription(e.target.value)
                 }}/>
